@@ -33,6 +33,9 @@ public class DetailUtil {
         case "_id":
             detail.setId(value);
             break;
+        case "dob":
+            detail.setDob(value);
+            break;
         case "state":
             detail.getAddress().setState(value);
             break;

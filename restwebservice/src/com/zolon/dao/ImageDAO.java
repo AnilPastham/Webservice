@@ -50,6 +50,7 @@ public class ImageDAO {
 		DBObject details = new BasicDBObject("_id", detail.getId())
 				                    .append("email", detail.getEmail())
 		                            .append("name", detail.getName())
+		                            .append("dob", detail.getDob())
 		                            .append("address", new BasicDBObject("street", detail.getAddress().getStreet())
 		                                                         .append("city", detail.getAddress().getCity())
 		                                                         .append("state", detail.getAddress().getState())

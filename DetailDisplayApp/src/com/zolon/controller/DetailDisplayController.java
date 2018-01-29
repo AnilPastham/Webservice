@@ -49,6 +49,10 @@ public class DetailDisplayController extends HttpServlet {
 				e.printStackTrace();
 			}
 			
+			for(Detail detail: listOfDetails) {
+				System.out.println("DATE OF BIRTH: " + detail.getDob());
+			}
+			
 			request.setAttribute("details", listOfDetails);
 
 	        request.getRequestDispatcher("/WEB-INF/views/displaydetail.jsp").forward(request, response);

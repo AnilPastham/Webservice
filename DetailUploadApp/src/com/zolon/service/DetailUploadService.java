@@ -31,6 +31,9 @@ public class DetailUploadService {
          case "id":
              detail.setId(item.getString());
              break;
+         case "dob":
+             detail.setDob(item.getString());
+             break;
          case "state":
              detail.getAddress().setState(item.getString());
              break;
